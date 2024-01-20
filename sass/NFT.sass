@@ -1,0 +1,569 @@
+
+*
+    box-sizing: border-box
+
+body
+    margin: 0
+    user-select: none
+
+
+.back
+    background: linear-gradient(to left top, #271341, #2a1949, #2c01a1, #dd01ff)
+    width: 100%
+    height: 700px
+    border-radius: 0 0px 125px 125px
+    .backbottom
+        position: absolute
+        bottom: 200px
+        background: #240e41
+        width: 100%
+        height: 200px
+        z-index: -3
+    
+
+.navbar
+    display: grid
+    grid-template-columns: 35% 5% 5% 5% 5% 25% 
+    gap: 30px
+    text-align: center
+    height: 70px
+    background: rgba(240, 240, 240, 0.1)
+    border-bottom: 1px solid rgba(255, 254, 254, 0.7)
+    .link
+        text-decoration: none
+        color: white
+        line-height: 5em
+        font-weight: 400px
+        font-size: 14px
+        text-transform: uppercase
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        transition: 0.2s all
+        &:hover
+            font-size: 15px
+            line-height: 4.2em
+        &:active
+            font-size: 14px
+            line-height: 5em
+
+    .tab-box
+        display: flex
+        flex-direction: space-between
+        gap: 10px
+        margin-left: 100px 
+.tab
+    height: 40px
+    margin-top: 10px 
+    width: 100px
+    border: 3px solid transparent
+    border-image: linear-gradient( to left, #DC06FF, #6ea8ff)
+    border-image-slice: 2
+    background-color: #0e054d 
+    color: white
+    text-align: center
+    transition: 0.5s all
+    cursor: pointer
+    &:hover
+        border: 3px solid transparent
+        border-image: linear-gradient( to left,  #6ea8ff, #DC06FF)
+        border-image-slice: 2
+        background: none
+        font-size: 12px
+            
+    img
+        width: 75px
+        height: 70px
+        margin-top: 2px
+        margin-left: 40px 
+
+.title
+    margin: 50px
+    margin-top: 100px
+    h1
+        font-size: 65px
+        font-weight: normal
+        background-image: linear-gradient(180deg, #E6B9FF 0%, #9E89FF 100%)
+        background-clip: text 
+        -webkit-background-clip: text 
+        color: transparent
+    p
+        font-size: 16px
+        color: white
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+.hand
+    position: absolute
+    top: 70px
+    right: 80px
+    width: 455px
+    height: 578px
+
+.mapback
+    background: #240e41
+    margin-top: -38px
+    width: 100%
+    height: 1150px
+    position: relative
+    .mapimg
+        margin: auto
+        position: relative
+        top: 210px
+        display: block
+    
+    .tab-page
+        display: flex
+        flex-direction: row
+        border: 3px solid transparent
+        border-image: linear-gradient( to left, #DC06FF, #6ea8ff)
+        border-image-slice: 2
+        padding: 5px 20px 20px 15px
+        background-color: #0e054d 
+        color: white
+        width: 200px
+        height: 50px
+        margin: auto
+        position: absolute
+        z-index: 2
+        top: 500px
+        left: 300px
+        transition: 0.5s all, 1s color
+        cursor: pointer
+        &::after
+            content: ""
+            position: absolute
+            top: 46px
+            left: 85%
+            margin-left: -10px
+            border-width: 15px
+            border-style: solid
+            border-color: #cd06ff  transparent transparent transparent
+            transition: 0.5s all
+        &.tab-page--one
+            left: 92px
+            top: 300px
+        &.tab-page--two
+            left: 200px
+            top: 415px
+        &.tab-page--three
+            left: 260px
+            top: 595px
+        &.tab-page--four
+            left: 599px
+            top: 330px
+            &::after
+                left: 10%
+                border-color: #7e96ff transparent transparent transparent
+        &.tab-page--five
+            left: 703px
+            top: 413px
+            &::after
+                left: 10%
+                border-color: #7e96ff transparent transparent transparent
+        &.tab-page--six
+            left: 665px
+            top: 602px
+            &::after
+                left: 10%
+                border-color: #7e96ff transparent transparent transparent
+        &.tab-page--seven
+            left: 1005px
+            top: 303px
+            &::after
+                left: 10%
+                border-color: #7e96ff transparent transparent transparent
+        h5
+            margin: auto
+            font-size: 10px
+            font-weight: 600
+            font-family: Arial, Helvetica, sans-serif
+            padding-left: 10px
+            margin-top: 5px
+            transition: 0.2s all
+            
+            &:last-child
+                font-size: 18px
+                margin-top: 6px
+                border-left: 2px solid white
+                padding-left: 10px 
+
+            span
+                position: relative
+                font-size: 9px
+        img
+            width: 33px
+            height: 33px
+    .tab
+        margin: auto
+        display: block
+        position: relative
+        top: 300px
+        width: 200px
+
+.label
+    position: relative
+    display: block
+    margin: auto
+    text-align: center
+    top: 110px
+    content: ''
+    z-index: 1
+    h2
+        font-family: Arial, Helvetica, sans-serif
+        font-weight: normal
+        font-size: 46px
+        color: #e9d7ee
+        
+    .circl
+        width: 100px
+        height: 100px 
+        background: linear-gradient(180deg, #5439cf 0%, #d98aec 100%)
+        border-radius: 50%
+        margin: auto
+        position: absolute
+        left: 455px
+        top: -20px
+        z-index: -1    
+
+
+.tab-page:hover
+    border: 3px solid transparent
+    border-image: linear-gradient( to left,  #6ea8ff, #DC06FF)
+    border-image-slice: 2
+    background: none
+    h5
+        font-size: 13px
+        color:#ce85da
+    &::after
+        opacity: 0
+.colect
+    background: #240e41
+    height: 700px
+    text-align: center
+    display: flex
+    border-box: box-sizing
+    .label
+        top: -110px
+        left: -65px
+        .circl
+            top: 16px
+            left: -35px
+    p
+        padding: 0px
+        text-align: left
+        color: #ffffffc9
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    .tab
+        float: left
+        width: 180px
+.profi
+    border: 1px solid #ffffffcb
+    width: 176px
+    height: 240px
+    position: relative
+    p
+        color: #ffffffc9
+        line-height: -25em
+        margin-top: -25px 
+        padding: 8px 
+    img
+        background: none
+        float: left
+        border-radius: 10px
+        margin-bottom: -10px
+    &.profi--one
+        left: 45px
+    &.profi--two
+        left: 140px 
+        top: 30px
+        img
+            background: none
+            top: -30px
+            left: 20px
+            padding: 0px
+    &.profi--three
+        left: -245px
+        top: 310px
+        img
+            background: linear-gradient(135deg, #613896 0%, #303438 100%)
+            height: 194px
+    &.profi--four
+        top: 340px
+        left: -145px
+        img
+            background: none
+            top: -40px
+            left: 10px
+            margin-bottom: -45px
+            border-radius: 30px
+
+        
+    img
+        background: linear-gradient( to left top, #DC06FF, #332ba5)
+        padding: 20px
+        position:  relative
+        top: -25px
+        left: 35px
+
+.cont-choose
+    background: #240e41
+    width: 100%
+    height: 580px
+.choose
+    
+    background: #150825
+    margin: auto
+    position: relative
+    float: left
+    padding: 50px
+    width: 95%
+    height: 500px
+    border-radius: 0px 200px 200px 0
+    border: 2px solid #6ea8ff
+    border-left: 0
+    .label
+        float: left
+        margin-top: -100px
+        text-align: left
+        .circl
+            left: -35px
+            top: 15px
+    p
+        color: #80AB9E
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    .why-page
+        float: right
+        display: grid
+        margin-top: 50px
+        grid-template-columns: 200px 200px 
+        grid-template-areas: 300px 600px  
+        width: 500px
+        gap: 25px
+
+    .why
+        margin: auto
+        margin-bottom: 10px
+        text-align: center
+        border: 1px solid #ffffff4d 
+        background: radial-gradient( 40% 50%, #8f06ff4f, #ffffff02 )
+        width: 170px
+        height: 120px
+        border-radius: 10px
+        transition: 0.4s all
+
+        img 
+            width: 42px
+            height: 35px
+            margin-top: 25px
+.why:hover
+    width: 190px
+    height: 140px
+    padding: 5px
+
+.list-cont
+    margin-top: -40px
+    background: #240e41
+    height: 1000px
+    .label
+        margin-top: -40px
+        margin-bottom: 200px
+        h4
+            color: white
+            background: #00000054
+            width: 300px 
+            padding: 20px
+            text-align: center
+            margin: auto
+            margin-bottom: 15px
+        .circl
+            left: -240px
+            top: 115px
+            position: relative
+            float: center
+        .tab
+            width: 200px
+
+    .list
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        .list-box
+            color: #ffffffc9
+            text-align: center
+            width: 190px
+            font-family: Arial, Helvetica, sans-serif
+        p
+            text-align: left
+        h4
+            color: #ffffffe5
+    .line
+        width: 100%
+        height: 2px
+        background: radial-gradient(40% 50%, #8f06ffa9, #8f06ff0a)
+        margin-top: 100px
+
+.footer
+    background: #150825
+    color: #ffffffe5
+    padding: 20px
+    font-family: Arial, Helvetica, sans-serif
+    border-top: 3px solid transparent
+    border-image: linear-gradient( to left, #DC06FF, #6ea8ff)
+    border-image-slice: 2
+    display: grid
+    grid-template-columns: 50% 50%
+    .big-icon
+        width: 60px
+        height: 60px
+    .footer-list
+        display: flex
+        flex-direction: row
+        a
+            text-decoration: none
+            color: #ffffffe5
+            &:hover
+                color: #6ea8ff
+        li
+            list-style-type: none
+            padding: 10px
+            font-size: 18px
+    .footer-line
+        display: grid
+        grid-template-columns: 870px 150px 150px
+        color: #717d9b
+        a
+            text-decoration: none
+            color: #545C71
+            &:hover
+                color: #8390b1
+    .social
+        width: 150px
+
+input[type=text], input[type=password] 
+  width: 100%
+  padding: 12px 20px
+  margin: 8px 0
+  display: inline-block
+  border: 1px solid #0e054d
+  background: #ffffffe5
+  box-sizing: border-box
+  color: #ffffffe5
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container 
+  padding: 16px
+  background: #0e054d
+
+.modal 
+  display: none
+  position: fixed
+  z-index: 1
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  overflow: auto
+  background-color: rgb(0,0,0)
+  background-color: rgba(0,0,0,0.4)
+  padding-top: 60px
+  color: #ffffffe5
+  .close 
+    position: absolute
+    right: 25px
+    top: 0
+    color: #ffffffe5
+    font-size: 35px
+    font-weight: bold
+  span.psw 
+    float: right
+    padding-top: 16px
+  .cancelbtn 
+    width: auto
+    padding: 10px 18px
+    background-color: #0e054d
+  button 
+    background-color: #0e054d
+    border: 3px solid transparent
+    border-image: linear-gradient( to left,  #6ea8ff, #DC06FF)
+    border-image-slice: 2
+    color: #ffffffe5
+    padding: 14px 20px
+    margin: 8px 0
+    cursor: pointer
+    width: 100%
+    transition: 0.3s all
+    &:hover
+        border: 3px solid transparent
+        border-image: linear-gradient( to left,  #DC06FF, #6ea8ff)
+        border-image-slice: 2
+        
+
+.modal-content 
+  margin: 5% auto 15% auto
+  border: 3px solid transparent
+  border-image: linear-gradient( to left,  #6ea8ff, #DC06FF)
+  border-image-slice: 2
+  width: 80%
+
+
+.close:hover,
+.close:focus 
+  color: #6ea8ff
+  cursor: pointer
+
+
+.animate 
+  -webkit-animation: animatezoom 0.6s
+  animation: animatezoom 0.6s
+
+
+@-webkit-keyframes animatezoom 
+  from 
+    -webkit-transform: scale(0)
+  to 
+    -webkit-transform: scale(1)
+
+  
+@keyframes animatezoom 
+  from 
+    transform: scale(0)
+  to 
+    transform: scale(1)
+
+
+
+@media screen and (max-width: 300px) 
+  span.psw 
+     display: block
+     float: none
+  
+  .cancelbtn 
+     width: 100%
+  
+
+
+
+
+        
+
+    
+
+
+
+    
+        
+
+    
+
+            
+
+
